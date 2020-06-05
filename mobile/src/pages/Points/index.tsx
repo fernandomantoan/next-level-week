@@ -28,6 +28,7 @@ interface Point {
   image: string;
   latitude: number;
   longitude: number;
+  image_url: string;
 }
 
 interface Params {
@@ -140,7 +141,7 @@ const Points = () => {
                   <View style={styles.mapMarkerContainer}>
                     <Image
                       source={{
-                        uri: point.image,
+                        uri: point.image_url,
                       }}
                       style={styles.mapMarkerImage}
                     />
